@@ -5,7 +5,19 @@ module.exports = {
     "./src/**/*.{vue,js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'main': ['Roboto', 'sans-serif']
+      },
+      colors: {
+        'black': {
+          DEFAULT: '#282828',
+        },
+        'gray': {
+          DEFAULT: '#7F7F7F'
+        }
+      }
+    },
   },
   plugins: [],
 }
