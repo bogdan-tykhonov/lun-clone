@@ -45,7 +45,7 @@ const navLinks: NavLink[] = [
 </script>
 
 <template>
-  <header class="font-main text-black py-4 sticky top-0">
+  <header class="font-main text-black py-4 sticky bg-white shadow-lg z-max top-0">
     <div class="max-w-6xl mx-auto flex justify-between items-center">
       <img :src="logo" />
 

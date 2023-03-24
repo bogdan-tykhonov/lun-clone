@@ -1,15 +1,15 @@
-/* eslint-env node */
-require('@rushstack/eslint-patch/modern-module-resolution')
-
 module.exports = {
   root: true,
-  'extends': [
-    'plugin:vue/vue3-essential',
-    'eslint:recommended',
-    '@vue/eslint-config-typescript'
-  ],
-  parserOptions: {
-    ecmaVersion: 'latest',
+  env: {
+    node: true
+  },
+  globals: {
+    defineProps: 'readonly',
+    defineEmits: 'readonly',
+    defineExpose: 'readonly'
+  },
+  extends: ['eslint:recommended', 'plugin:vue/vue3-recommended'],
+  rules: {
     indent: ['error', 2],
     'no-console': ['error', { allow: ['error'] }],
     quotes: ['error', 'single'],
@@ -45,4 +45,4 @@ module.exports = {
     'vue/max-len': ['error', { 'ignoreStrings': true, 'ignoreHTMLAttributeValues': true, 'code': 120 }],
     'vue/multi-word-component-names': 'warn'
   }
-}
+};

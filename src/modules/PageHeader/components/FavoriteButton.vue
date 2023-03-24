@@ -5,5 +5,8 @@ import favorite from '@images/header-icons/favorite.svg';
 </script>
 
 <template>
-  <LinkButton text="Мій ЛУН" :img="favorite" />
+  <LinkButton
+    text="Мій ЛУН"
+    :img="favorite"
+  />
 </template>
